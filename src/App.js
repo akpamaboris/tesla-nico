@@ -21,7 +21,7 @@ const Propositions = ({
       }
     } else if (total === 91700 || total === 107700) {
       if (price === 1000) {
-        setTotal((total = total));
+        setTotal((total = 1000));
       } else if (price === 106700) {
         setTotal((total = 106700));
       } else if (price === 90700) {
@@ -104,7 +104,7 @@ const TitlePage = ({ title }) => {
 function App() {
   const [total, setTotal] = useState(0);
   const [prop1, setProp1] = useState(true);
-  const [key, setKey] = useState([0, 1, 2, 3]);
+  const [key] = useState([0, 1, 2, 3]);
 
   return (
     <div className="App">
