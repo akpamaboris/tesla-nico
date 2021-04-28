@@ -73,6 +73,12 @@ const Propositions = ({
         {text}
       </div>
     );
+  } else if (total === 90700) {
+    return (
+      <div onClick={calculate} className={mykey === 0 ? "blue" : "black"}>
+        {text}
+      </div>
+    );
   }
   // return (
   //   <div
